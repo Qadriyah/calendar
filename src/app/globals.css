@@ -4,15 +4,15 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 250, 249, 248;
+  --background-end-rgb: 250, 249, 248;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 250, 249, 248;
+    --background-end-rgb: 250, 249, 248;
   }
 }
 
@@ -30,4 +30,25 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.right-button {
+  background-image: url(/assets/right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+}
+
+.left-button {
+  background-image: url(/assets/left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+}
+
+.right-button:hover,
+.left-button:hover {
+  cursor: pointer;
 }
